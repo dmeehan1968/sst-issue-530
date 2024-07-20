@@ -1,0 +1,12 @@
+{
+  "name": "sst-issue-530",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd packages/dashboard; sst dev next dev",
+    "deploy": "cd packages/dashboard; sst deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
