@@ -8,5 +8,14 @@ export default $config({
       home: "aws",
     };
   },
-  async run() {},
+  async run() {
+
+    const secret = new sst.Secret('MySecret', 'placeholder-value')
+
+    new sst.aws.Nextjs('MyWeb', {
+      path: 'packages/dashboard',
+      link: [ secret ]
+    })
+
+  },
 });
